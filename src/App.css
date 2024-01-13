@@ -13,26 +13,43 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-wrapper{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
+
+.input{
+  height: 100%;
+  border: 1px solid green;
+  outline: none;
+
+}
+
+.add-btn{
+  height: 100%;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+
