@@ -31,7 +31,7 @@ const Todo = () => {
   };
 
   return (
-    <div>
+    <div className="main-wrapper">
       <div className="form-wrapper">
         <input
         className="input"
@@ -46,7 +46,7 @@ const Todo = () => {
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
-            {todo.text}
+           <span>{todo.text}</span> 
             <button onClick={() => handleRemoveTodo(todo.id)}>Remove</button>
           </li>
         ))}
